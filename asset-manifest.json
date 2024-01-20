@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/payliao/static/css/main.1e7afad5.css",
-    "main.js": "/payliao/static/js/main.a4470e37.js",
+    "main.js": "/payliao/static/js/main.a42d2484.js",
     "static/js/787.6d488f10.chunk.js": "/payliao/static/js/787.6d488f10.chunk.js",
     "static/media/METAMASK.png": "/payliao/static/media/METAMASK.3bdeedca06885ed41b32.png",
     "static/media/Login_BG.png": "/payliao/static/media/Login_BG.7776845717757eb7512b.png",
@@ -11,11 +11,11 @@
     "static/media/logo-white-no-bg.png": "/payliao/static/media/logo-white-no-bg.8e11ac4fc2407e7b5d1f.png",
     "index.html": "/payliao/index.html",
     "main.1e7afad5.css.map": "/payliao/static/css/main.1e7afad5.css.map",
-    "main.a4470e37.js.map": "/payliao/static/js/main.a4470e37.js.map",
+    "main.a42d2484.js.map": "/payliao/static/js/main.a42d2484.js.map",
     "787.6d488f10.chunk.js.map": "/payliao/static/js/787.6d488f10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e7afad5.css",
-    "static/js/main.a4470e37.js"
+    "static/js/main.a42d2484.js"
   ]
 }
