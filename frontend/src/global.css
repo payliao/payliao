@@ -1,0 +1,116 @@
+:root {
+    --primary-bg: #20232A;
+    --secondary-bg: #282c34;
+    --neutral-bg: #E9E9E9;
+    
+    --primary-text: white;
+    --secondary-text: red;
+    --neutral-text: #6D6D6D;
+
+    --highlight-text: #ffffff; /* A gold color for highlighting */
+    --error-text: #EF7788;
+    --success-text: #55EEAA;
+
+    --button-bg: #61dafb;
+    --button-text: white;
+    --button-border: #4FAFC4;
+
+    --InvalidColor: grey;
+    --ApprovedColor: Green;
+    --RejectedColor:Red;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.global-message {
+    color: var(--highlight-text);
+    background-color: var(--BackgroundUncovered);
+    word-wrap: break-word;
+    /* padding: 10px;
+    border-radius: 5px; */
+}
+
+.global-link {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.global-link:hover {
+    text-decoration: underline;
+}
+
+.toolbar-btn:hover {
+    background-color: var(--button-border);
+    cursor: pointer;
+    color: white;
+}
+
+/* .global-footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--neutral-text);
+    padding: 20px 0;
+    
+} */
+
+.global-btn {
+    font-size: 11px;
+    height: 100%;
+    width: 100px; 
+    color: var(--button-bg);
+}
+
+.toolbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--button-bg);
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.global-toolbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(17, 16, 17, 0.75);
+    height: 10%;
+    width: 100%;
+    color: var(--primary-text);
+}
+
+@media screen and (min-width: 1800px) {
+    /* if the viewport is 1800px or smaller */
+    
+
+}
+
+@media screen and (max-width: 900px) {
+    /* if the viewport is 900px or smaller */
+    /* .global-btn {
+        font-size: 14px;
+        width: auto;
+        height: 1rem;
+        padding: 10px;
+    } */
+
+    
+}
+
+body, html {
+    height: 100%;
+    margin: 0; /* Reset default margin */
+    overflow-x: hidden; /* Hide horizontal scrollbar if not necessary */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+
+
