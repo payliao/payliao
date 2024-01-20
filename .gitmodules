@@ -1,3 +1,6 @@
 [submodule "contract"]
 	path = contract
 	url = https://github.com/sgqrpromax/sgqrpromax-smart-contracts.git
+[submodule "payliao-smart-contracts"]
+	path = payliao-smart-contracts
+	url = https://github.com/payliao/payliao-smart-contracts.git
