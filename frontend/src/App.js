@@ -69,7 +69,7 @@ export default function App() {
             // Since ERC-20 tokens can have different decimals, you need to format the balance
             //let formattedSGDkBalance = ethers.utils.formatUnits(SGDkBalance, 6); // Replace '18' with the actual token decimals if different
 
-            console.log(chainId);
+            console.log("chainID: ", chainId);
             if (chainId === '0x3'){
                 setNetwork('Ropsten Test Network');
             }
@@ -78,6 +78,9 @@ export default function App() {
             }
             else if (chainId === '0xaa36a7'){
                 setNetwork('Sepolia Test Network');
+            }
+            else if (chainId == '0x13881'){
+                setNetwork('Mumbai Test Network');
             }
             else {
                 setNetwork('Other Test Network');
