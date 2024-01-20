@@ -8,7 +8,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 //set this to correct path
-const basename = 'SGQR-Pro-Max/'
+const basename = 'payliao/'
 console.log('Public URL:', process.env.PUBLIC_URL);
 console.log('Basename:', basename);
 
