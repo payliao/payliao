@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/payliao/static/css/main.d7646682.css",
+    "main.js": "/payliao/static/js/main.4f134bc9.js",
+    "static/js/787.6d488f10.chunk.js": "/payliao/static/js/787.6d488f10.chunk.js",
+    "static/media/METAMASK.png": "/payliao/static/media/METAMASK.3bdeedca06885ed41b32.png",
+    "static/media/Login_BG.png": "/payliao/static/media/Login_BG.7776845717757eb7512b.png",
+    "static/media/Profile_BG.png": "/payliao/static/media/Profile_BG.9984f2ceaa0af34100f4.png",
+    "static/media/QR_BG.png": "/payliao/static/media/QR_BG.852ec13fc304eac89d7e.png",
+    "static/media/History_BG.png": "/payliao/static/media/History_BG.d2242be9a974d93122e0.png",
+    "static/media/logo-white-no-bg.png": "/payliao/static/media/logo-white-no-bg.8e11ac4fc2407e7b5d1f.png",
+    "index.html": "/payliao/index.html",
+    "main.d7646682.css.map": "/payliao/static/css/main.d7646682.css.map",
+    "main.4f134bc9.js.map": "/payliao/static/js/main.4f134bc9.js.map",
+    "787.6d488f10.chunk.js.map": "/payliao/static/js/787.6d488f10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7646682.css",
+    "static/js/main.4f134bc9.js"
+  ]
+}
