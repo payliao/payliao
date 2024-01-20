@@ -307,6 +307,7 @@ export default function PayToQR2(props) {
                                         onError={handleError}
                                         onResult={handleScan}
                                         className="qrScanner"
+                                        constraints={{facingMode: 'environment'}}
                                     />
                                 </div>
                                 Scanning...
