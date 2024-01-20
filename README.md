@@ -1,8 +1,6 @@
 # Overview of project
 
-[SGQR Pro Max report](https://docs.google.com/document/d/1gl4Az8Ru_RCtfZpL4rT_4Ridk-icp56TpXDgvwWStM0)
-
-This project aims to enhance the [existing SGQR](https://www.mas.gov.sg/development/e-payments/sgqr) functionality, enhancing and improving Singapore's B2C payment system. Please refer to our report above for more information. 
+This project aims to enhance the [existing SGQR](https://www.mas.gov.sg/development/e-payments/sgqr) functionality, enhancing and improving Singapore's B2C payment system.
 
 Singapore's business entities [use UEN as identifier](https://www.uen.gov.sg/ueninternet/faces/pages/admin/aboutUEN.jspx), sort of like an identity card or passport number. This UEN is used in everything, including for use in banking and existing payment systems. Consumers can scan existing SGQR which includes UEN as the identifer to pay with the [PayNow](https://www.abs.org.sg/consumer-banking/pay-now) instant settlement payment network that every major bank in Singapore participates in. We aim to augment and enhance this feature. 
 
@@ -15,15 +13,13 @@ For our project, we have created a fictitious stablecoin SGDk (k for constant) t
 ## Usage scenarios
 
 ### Tourists
-A tourist from the USA has some USDC on XRPL as a CBDC. He changes for some SGDk on XRPL main chain DEX. He then bridges this SGDk to the XRPL EVM side chain. 
+A tourist from the USA has some USDC on the Blockchain as a CBDC.
 
-He visits a hawker centre in Singapore and scans the SGQR code there. He pays directly to the UEN of the merchant using his SGDk. 
-
-After his trip, he bridges back these SGDk to the XRPL Main chain and swaps back to USDC. 
+He visits a hawker centre in Singapore and scans the SGQR code there. He pays directly to the UEN of the merchant using his USDC. 
 
 No cash needed, even for small roadside stalls.
 
-### Merchant
+### Merchants
 The 70 years old hawker auntie heard about this new payment method. Instead of spending hours calling and setting up an email, all she has to do is to navigate to a website and key in her UEN to view how much money she has received. At the end of the month when she has more time, she approaches us to onboard. 
 
 No need to spend time onboarding, entire Singapore is already onboarded. 
@@ -35,28 +31,22 @@ The DBS PayLah app pings their central server and if there is no response, switc
 
 No money wasted on maintaining critical server infrastructures. All our financial data are decentralised and available on every continent around the globe for maximum redundancy even in the event of war.
 
-## Layout of repo
-1. Instructions to use as user
-1. frontend
-1. Smart Contract backend
-1. XRPL Main chain and XRP EVM Side chain intergration
-
-## To test it out yourself
-
-[Video demonstration](https://www.youtube.com/watch?v=NgOn1ZzMZlw)
+## Layout of Repository
+1. Usage Intructions
+2. ReactJS Frontend
+3. Solidity Smart Contracts Backend
 
 ### Pay to merchant
 1. Download metamask on your phone
-1. Import an onboarded merchant account here. `table obtain ship purse entire recall vendor olympic keen angry genius bounce`
-1. Import XRPL EVM Side Chain into Metamask. 
-1. Import SGDk `0xa462f79a8c09a0770614140B9f53Ebc9fD8413b5` and SGDm `0x1F11B837513dF2F3e17D5b017f83C5c17C76261f`. 
+2. Import an onboarded merchant account here. `table obtain ship purse entire recall vendor olympic keen angry genius bounce`
+3. Import SGDk `0xa462f79a8c09a0770614140B9f53Ebc9fD8413b5` and SGDm `0x1F11B837513dF2F3e17D5b017f83C5c17C76261f`. 
    1. SGDk is the stablecoin that will be used by merchants and users for payments.
    1. SGDm is the merchant ERC20 for merchants who have onboarded and whitelisted their wallets. They will be able to see their balance as SGDm and transfer it out if they want to. 
-1. Go to our [website](https://sgqrpromax.github.io/SGQR-Pro-Max/) with the metamask browser.
-1. Go to the merchant tab and check the balance of the merchant you will pay to `198402065R`.
-1. Scan the merchant's [QR code](sgqr/198402065R.jpg).
-1. Pay to this merchant however much SGDk you want.
-1. Check the balance of the merchant again. You will see the balance of the merchant has increase.
+4. Go to our [website](https://payliao.github.io/payliao/) with the metamask browser.
+5. Go to the merchant tab and check the balance of the merchant you will pay to `198402065R`.
+6. Scan the merchant's [QR code](sgqr/198402065R.jpg).
+7. Pay to this merchant however much SGDk you want.
+8. Check the balance of the merchant again. You will see the balance of the merchant has increase.
    1. This is also the step to take if you want to receive payment as a merchant without onboarding and wants to check the balance and transaction history. 
 
 ### Merchant
@@ -68,17 +58,15 @@ No money wasted on maintaining critical server infrastructures. All our financia
 1. Transfer SGDm to yourself or anyone else. You will realise you receive SGDk. 
 
 ### SGDk
-To receive SGDk, simply send any amount of XRP token (gas token) to the SGDk contract `0xa462f79a8c09a0770614140B9f53Ebc9fD8413b5`.
+To receive SGDk, simply mint any amount from SGDk contract `0xa462f79a8c09a0770614140B9f53Ebc9fD8413b5`.
 
 ### UEN Management
-Many SGQR around Singapore do not have UENs in them as they are not proper SGQR. As XRP EVM is also slightly limited, we only managed to get 5000 UENs uploaded onto the database for the time being. For now, if you want to test any UENs, we can manually add them into the blockchain. 
-
-For now, [the UENs present are here](contract/script/python/uen_data/full_uen_filtered_list/d_0cc5f52a1f298b916f317800251057f3).
+[The UENs present on-chain are here](contract/script/python/uen_data/full_uen_filtered_list/d_0cc5f52a1f298b916f317800251057f3).
 
 ## Frontend
 The frontend was built with React, HTML and CSS to create a website that works on both computer and mobile.
 
-To access the website, user will be prompted to connect his/her Metamask wallet to the website when the user clicks on the "Get Started" button.
+To access the website, user will be prompted to connect his/her Metamask wallet to the website when the user clicks on the "Login with Metamask" button.
 Upon entering the website, the user has access to a number of pages.
 
 ### Pay To QR Page
@@ -99,14 +87,7 @@ The merchant just needs to key in their wallet address as well as the amount of 
 Merchants can also check their SGDk token balance based on the UEN.
 
 ## Backend
-The smart contract backend contains 2 portions, one for the XRP EVM Side chain, and another one for the XRPL Main chain. They're described in brief below. 
-
-More details are on the readme in the contract folder.
-
 The smart contracts are developed with [foundry](https://github.com/foundry-rs/foundry).
-
-### XRPL Main Chain
-The XRPL main chain will be used to swap stablecoins for SGDk. The SGDk will then be bridged to the EVM side chain. The reason for using the main chain for holding and swapping for SGDk is explained as follows. 
 
 #### Security
 The main chain has never had a single hack that has occurred since inception in 2012, resulting in the most secure chain in terms of enterprise use. As the main chain is not programmable, the chain offers enough core feature to hold the SGDk safely and securely. 
@@ -121,7 +102,6 @@ The EVM side chain will hold all the smart contract backend, enabling payment pr
 
 #### SGDk 
 Address: `0xa462f79a8c09a0770614140B9f53Ebc9fD8413b5`
-This is the fictitious CBDC stablecoin we are using on the XRPL EVM Side chain. 
 
 #### SGDm
 Address: `0x1F11B837513dF2F3e17D5b017f83C5c17C76261f`
