@@ -52,7 +52,7 @@ No money wasted on maintaining critical server infrastructures. All our financia
 ### Merchant
 1. To view the balance of any merchant, including a merchant who has not onboarded, go to merchant tab and enter the UEN. An example UEN is `198402065R`. 
    1. This is the step to take if you want to receive payment as a merchant without onboarding and wants to check the balance and transaction history. 
-1. Now we assume the role of a merchant who has onboarded with us. Import this account `1465ef7ce4ee81fdef9e854e51b97013c1ff740dfd494ddbbb60176c999f581f` into metamask. This is the whitelisted account of the sample UEN `198402065R` you paid to.
+1. Now we assume the role of a merchant who has onboarded with us. Import this account `${PRVATE_KEY}` into metamask. This is the whitelisted account of the sample UEN `198402065R` you paid to.
 1. Import SGDk `0xa462f79a8c09a0770614140B9f53Ebc9fD8413b5` and SGDm `0x1F11B837513dF2F3e17D5b017f83C5c17C76261f`. 
 1. You will see SGDm matches the balance if you query the balance of the UEN on our website. This works as this wallet is whitelisted to be the owner of the UEN. 
 1. Transfer SGDm to yourself or anyone else. You will realise you receive SGDk. 
